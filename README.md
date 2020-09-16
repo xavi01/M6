@@ -1,1 +1,1 @@
-# M6
+# M6 - Exercicis de fitxers
