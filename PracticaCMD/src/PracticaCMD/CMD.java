@@ -70,9 +70,7 @@ class CMD {
 		}
 		
 		
-		
-		
-		
+				
 		
 	     if(parts[0].equals("mkdir") ) {	 //mkdir
 				
@@ -93,11 +91,7 @@ class CMD {
 			parts = comanda.split(" ");			
 		}
 		
-		
-	     
-	     
-	     
-	     
+	
 	     
 	     
 	   if(parts[0].equals("del") ) {	 //del
@@ -122,12 +116,7 @@ class CMD {
 		}
 			
 	     
-	   
-	   
-	   
-	   
-	   
-	     
+   
 		
 	   if(parts[0].equals("rename") ) {	 //rename
 				
@@ -142,32 +131,15 @@ class CMD {
                } else {   //No s'ha renombrat correctament
                    System.out.println("No s'ha pogut renombrar " + r.getName());
                }      	
-	        }
-			 	
+	        }		 	
 			
 	       System.out.print(ruta.getParent()+">");		
 		   comanda = lector.nextLine();
-		   parts = comanda.split(" ");
-			    
-	    	 
-	    	 
-	    	 
-		    	
-		   System.out.print(ruta.getParent()+">");		
-		   comanda = lector.nextLine();
-		   parts = comanda.split(" ");			
+		   parts = comanda.split(" ");			   		
 		}
 				
 		
-		
-		
-		
-		
-	   
-	   
-	   
-	   
-		
+
 		}
 					
 	}
