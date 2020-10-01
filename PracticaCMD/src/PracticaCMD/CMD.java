@@ -26,7 +26,6 @@ class CMD {
 		
 		
 		while(!exit.equals(comanda)) {
-
 			
 			
 		if(parts[0].equals("dir") || parts[0].equals("DIR") ) {    //DIR   
@@ -61,8 +60,8 @@ class CMD {
 		
 		
 		if(parts[0].equals("cd") || parts[0].equals("CD") ) {	 //CD				
-		    File a = new File(parts[1]);  //Creem file per despres ficarli aquest nom a la ruta
-		    ruta.renameTo(a); //Renombrar ruta
+		    
+		    ruta= new File(parts[1]); //Renombrar ruta per accedir a aquesta
 		    
 			System.out.print(ruta.getParent()+">");		
 			comanda = lector.nextLine();
