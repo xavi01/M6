@@ -75,7 +75,7 @@ class CMD {
 				
 	    	File f = new File(ruta, parts[1]);
 		    	    	
-	    	if (!f.exists()) {  //Comprovem si el fitxer existeix o no	            	          
+	    	if (!f.exists()) {  //Comprovem si el fitxer no existeix 	            	          
 	                    if (f.createNewFile()) {  //Se cree el fitxer, si s'ha creat correctament
 	                        System.out.println("Fitxer " + f.getName() + " creat");
 	                    } else {   //No s'ha creat correctament
@@ -97,7 +97,7 @@ class CMD {
 								
 			File d = new File(ruta, parts[1]);       
 			
-			if (!d.exists()) {  //Comprovem si el fitxer existeix o no
+			if (!d.exists()) {  //Comprovem si el fitxer no existeix 
 	            System.out.println("El fitxer " + d.getName() + " no existeix");	            	                                  
 	        } else { //El fitxer existeix
 
