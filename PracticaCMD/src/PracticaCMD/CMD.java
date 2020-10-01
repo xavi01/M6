@@ -59,7 +59,7 @@ class CMD {
 		
 		
 		
-		if(parts[0].equals("cd") || parts[0].equals("CD") ) {	 //CD				
+		else if(parts[0].equals("cd") || parts[0].equals("CD") ) {	 //CD				
 		    
 		    ruta= new File(parts[1]); //Renombrar ruta per accedir a aquesta
 		    
@@ -71,7 +71,7 @@ class CMD {
 		
 				
 		
-	     if(parts[0].equals("mkdir") ) {	 //mkdir
+		else if(parts[0].equals("mkdir") ) {	 //mkdir
 				
 	    	File f = new File(ruta, parts[1]);
 		    	    	
@@ -93,7 +93,7 @@ class CMD {
 	
 	     
 	     
-	   if(parts[0].equals("del") ) {	 //del
+		else if(parts[0].equals("del") ) {	 //del
 								
 			File d = new File(ruta, parts[1]);       
 			
@@ -117,7 +117,7 @@ class CMD {
 	     
    
 		
-	   if(parts[0].equals("rename") ) {	 //rename
+		else if(parts[0].equals("rename") ) {	 //rename
 				
 		   File r = new File(ruta, parts[1]);
 		   File r1 = new File(ruta, parts[2]);
@@ -135,6 +135,15 @@ class CMD {
 	       System.out.print(ruta.getParent()+">");		
 		   comanda = lector.nextLine();
 		   parts = comanda.split(" ");			   		
+		}
+		
+		
+		else {
+			System.out.println("Comanda erronea.");
+			
+			  System.out.print(ruta.getParent()+">");		
+			   comanda = lector.nextLine();
+			   parts = comanda.split(" ");
 		}
 				
 		
