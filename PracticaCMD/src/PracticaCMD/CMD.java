@@ -48,13 +48,14 @@ class CMD {
 				   int Hour = calendar.get(Calendar.HOUR);
 				   int Minute = calendar.get(Calendar.MINUTE);  
 				      		   	  
-				 System.out.println(Day + "/" + Month + "/" + Year + "  " + Hour + ":" + Minute + "  " +c.getName());				   	   
+				 System.out.println(Day + "/" + Month + "/" + Year + "  " + Hour + ":" + Minute + "  " +c.getName() +" " + c.length() +" bytes");				   	   
 			   }
 			   
 			   System.out.print(ruta.getParent()+">");
 			   comanda = lector.nextLine();
 			   parts = comanda.split(" "); //Partir comanda			  	
 	    }   
+		
 		
 		
 		
