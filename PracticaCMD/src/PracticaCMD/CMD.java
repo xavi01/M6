@@ -34,6 +34,7 @@ class CMD {
 			   ArrayList<File> llistafiles = new ArrayList();	
 			   int dirs =0;
 			   int archivos=0;
+			   long bytes_total =0;
 			   
 			   for(String a:llista) { //Creem un for de strings, que recorrera l'arrray de Strings llista[]
 				   File b = new File(ruta,a); //Creem objecte file per poder ficarlo dins d'un ArrayList d'objectes File
@@ -53,16 +54,19 @@ class CMD {
 				   if (c.isDirectory()) {
 				   System.out.println(Day + "/" + Month + "/" + Year + "  " + Hour + ":" + Minute + "     "+"<DIR>" + "     "+c.getName() +" " + c.length() +" bytes");	
 				   dirs++;
+				   bytes_total = bytes_total + c.length();
 				   }else {
 				   System.out.println(Day + "/" + Month + "/" + Year + "  " + Hour + ":" + Minute + "              " +c.getName() +" " + c.length() +" bytes");	
 				   archivos++;
+				   bytes_total = bytes_total + c.length();
 				   }
 				   
 				   
 			   }
 			   
-			   System.out.println("                " +archivos + " archivos");
+			   System.out.println("                " +archivos + " archivos"); 
 			   System.out.println("                " +dirs + " dirs");
+			   System.out.println("                " +bytes_total + " bytes");
 			    
 			   System.out.print(ruta.getParent()+">");
 			   comanda = lector.nextLine();
