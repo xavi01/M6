@@ -47,8 +47,12 @@ class CMD {
 				   int Day = calendar.get(Calendar.DAY_OF_MONTH);
 				   int Hour = calendar.get(Calendar.HOUR);
 				   int Minute = calendar.get(Calendar.MINUTE);  
-				      		   	  
-				 System.out.println(Day + "/" + Month + "/" + Year + "  " + Hour + ":" + Minute + "  " +c.getName() +" " + c.length() +" bytes");				   	   
+				      	
+				   if (c.isDirectory()) {
+				   System.out.println(Day + "/" + Month + "/" + Year + "  " + Hour + ":" + Minute + "     "+"<DIR>" + "     "+c.getName() +" " + c.length() +" bytes");	
+				   }else {
+				   System.out.println(Day + "/" + Month + "/" + Year + "  " + Hour + ":" + Minute + "                 " +c.getName() +" " + c.length() +" bytes");	
+				   }
 			   }
 			   
 			   System.out.print(ruta.getParent()+">");
