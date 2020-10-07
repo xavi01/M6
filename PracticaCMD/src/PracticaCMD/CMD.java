@@ -51,7 +51,7 @@ class CMD {
 				   if (c.isDirectory()) {
 				   System.out.println(Day + "/" + Month + "/" + Year + "  " + Hour + ":" + Minute + "     "+"<DIR>" + "     "+c.getName() +" " + c.length() +" bytes");	
 				   }else {
-				   System.out.println(Day + "/" + Month + "/" + Year + "  " + Hour + ":" + Minute + "                 " +c.getName() +" " + c.length() +" bytes");	
+				   System.out.println(Day + "/" + Month + "/" + Year + "  " + Hour + ":" + Minute + "              " +c.getName() +" " + c.length() +" bytes");	
 				   }
 			   }
 			   
