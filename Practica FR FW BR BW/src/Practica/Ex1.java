@@ -12,7 +12,7 @@ public class Ex1 {
 		FileReader fr = new FileReader("C:\\Users\\xavie\\Escritorio\\SALLE\\LLUBES\\M6 - ACCES A DADES\\Practica FR FW BW BR\\Poema.txt");
 		BufferedReader br = new BufferedReader(fr);
 		
-		String[] text= new String[15]; //Cada casella de l'string sera una frase
+		String[] text= new String[15]; //Cada casella de l'array sera una frase
 		int i = 0; //contador per augmentar l'array
 		
 		System.out.println("Text original: ");
