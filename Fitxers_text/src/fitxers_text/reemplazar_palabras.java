@@ -25,22 +25,28 @@ public class reemplazar_palabras {
 			
 			System.out.print("Quina paraula vols cambiar: ");
 			String pararula_cambiar = scan.nextLine();
-			System.out.print("Quina serà la paraula nova: ");
-			String pararula_nova = scan.nextLine();
+			
 			
 			if(text.contains(pararula_cambiar)) { //Si el text té la paraula a cambiar entrara
+				
+				System.out.print("Quina serà la paraula nova: ");
+				String pararula_nova = scan.nextLine();
+				
 				text = text.replaceAll(pararula_cambiar, pararula_nova); //cambiar la paraula
 				
+				System.out.println(text);
+				fr.close();
+				
+				
+				FileWriter fw = new FileWriter("C:\\Users\\xavie\\Escritorio\\SALLE\\LLUBES\\hola.txt");
+				fw.write(text); //Escriu al fitxer el contingut del string text
+				fw.close();
+				
+				
+			}else {
+				System.out.println("No s'ha trobat la paraula.");
 			}
-			
-			System.out.println(text);
-			fr.close();
-			
-			FileWriter fw = new FileWriter("C:\\Users\\xavie\\Escritorio\\SALLE\\LLUBES\\hola.txt");
-			fw.write(text); //Escriu al fitxer el contingut del string text
-			fw.close();
-			
-			
+	
 		}catch (Exception e){
 			
 		}
