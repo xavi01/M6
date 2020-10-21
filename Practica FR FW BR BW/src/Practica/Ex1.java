@@ -7,8 +7,7 @@ public class Ex1 {
 
 	public static void main(String[] args) {
 		
-	try {
-			
+	try {		
 
 		FileReader fr = new FileReader("C:\\Users\\xavie\\Escritorio\\SALLE\\LLUBES\\M6 - ACCES A DADES\\Practica FR FW BW BR\\Poema.txt");
 		BufferedReader br = new BufferedReader(fr);
@@ -39,10 +38,8 @@ public class Ex1 {
 		System.out.println("El text al revés: ");
 		System. out. println();
 			
-		for (int c=text.length-2; c>=0;c--) {
-		
-			System.out.println(text[c]);
-			
+		for (int c=text.length-2; c>=0;c--) {	
+			System.out.println(text[c]);	
 		}
 		
 	}catch (Exception e){
