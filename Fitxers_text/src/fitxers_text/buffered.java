@@ -1,11 +1,16 @@
 package fitxers_text;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.Scanner;
 
 public class buffered {
 
 	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
 		
 		try {
 			
@@ -21,6 +26,18 @@ public class buffered {
 			br.close();
 			fr.close();
 			
+			FileWriter fw = new FileWriter("C:\\Users\\xavie\\Escritorio\\SALLE\\LLUBES\\hola.txt",true);
+			BufferedWriter bw = new BufferedWriter(fw);
+			
+			System.out.print("Entra un nom: ");
+			String nom = scan.nextLine();
+			
+			bw.newLine(); //Escriu un salt de linea 
+			//bw.write("/n"); una altra manera de salt de linea
+			bw.write(nom);
+			
+			bw.close();
+			fw.close();
 			
 		} catch (Exception e) {
 			// TODO: handle exception
