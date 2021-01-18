@@ -1,1 +1,1 @@
-# M6 - Accés a Dades
+# M6 - Exercicis de fitxers

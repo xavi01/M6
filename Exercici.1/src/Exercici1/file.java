@@ -26,7 +26,7 @@ class file {
 		   File b = new File(ruta1,a); //Creem objecte file per poder ficarlo dins d'un ArrayList d'objectes File
 		   llistafiles.add(b);//Afegim l'objecte File "b" a l'array llistafiles[]
 	   }
-	 
+	  
 	   
 	   
 	   for(File c:llistafiles) {

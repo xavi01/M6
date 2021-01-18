@@ -18,7 +18,7 @@ public class buffered {
 			BufferedReader br = new BufferedReader(fr);
 			String line = br.readLine(); //Buffered line et llegeix tota una linea
 			
-			while(line != null) { //Anira mostrant linea linea mentre br no sigui null que es quan acava de llegir
+			while(line != null) { //Anira mostrant linea linea mentre br no sigui null que es quan acava de llegir.
 		      line = br.readLine();
 			  System.out.println(line);
 			}

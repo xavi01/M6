@@ -26,7 +26,7 @@ public class Ex1 {
 		while(line != null) { //Anira mostrant linea linea mentre br no sigui null que es quan acava de llegir
 		  i++;
 	      line = br.readLine(); //Llegir linea
-		  System.out.println(line);  //Printar linea
+		  System.out.println(line); //Printar linea
 		  text[i]=line; //Guardar la linea llegida a un array
 		
 		}
